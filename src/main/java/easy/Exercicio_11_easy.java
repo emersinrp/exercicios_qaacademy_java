@@ -1,3 +1,5 @@
+package easy;
+
 import javax.swing.*;
 
 public class Exercicio_11_easy { //Inicio algoritmo
@@ -13,4 +15,4 @@ public class Exercicio_11_easy { //Inicio algoritmo
             i++;
         } // Fim enquanto
     }
-}//Teste commit com a conta gracas a Deus
+}
