@@ -15,4 +15,4 @@ public class Exercicio_01_medium { //Inicio algoritmo
             i++;
         }
     }
-} //Fim algoritmo
+} //Fim algoritmo - commit
