@@ -12,5 +12,9 @@ public class Exercicio_10_medium {
             System.out.println(fibonacci[i]);
         }
     }
+
+    public String testeMetodo(){
+        return null;
+    }
 }
 
