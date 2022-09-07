@@ -16,9 +16,15 @@ public class Execucao_exercicios_easy {
         }
 
         if (selecionaExercicio == 3){
+            Exercicio_03_easy ex03_easy = new Exercicio_03_easy();
+            String primeiroNome = "Farofa";
+            String segundoNome = "Arroz";
 
-
+            System.out.println(ex03_easy.retornaValorTroca(primeiroNome, segundoNome));
         }
 
+        if (selecionaExercicio == 4){
+
+        }
     }
 }
