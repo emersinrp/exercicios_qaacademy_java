@@ -1,24 +1,20 @@
 package easy;
 
-import javax.swing.*;
-
 public class Exercicio_10_1_easy {
 
-    static double valorJuros, taxaJuros = 0.05, valorInvestimento, valorTotal;
-    static int ano = 1;
-    public static void main(String[] args) {
+    public double calculaJuros(double valorInvestimento){
+        int ano = 1;
+        double taxaJuros = 0.05, valorJuros = 0;
 
-        valorInvestimento = Double.parseDouble(JOptionPane.showInputDialog("Insira um valor:"));
-
-        while (ano <= 10) {
+        while (ano <=10) {
             valorJuros = valorJuros + (valorInvestimento * taxaJuros);
             ano++;
         }
-
-        valorTotal = valorJuros + valorInvestimento;
-
-        System.out.println("Valor investido R$" + valorInvestimento);
-        System.out.println("Valor juros R$"+ valorJuros);
-        System.out.println("Valor Total com juros R$" + valorTotal);
+        return valorJuros;
     }
+    public double totalComJuros(double valorJuros, double valorInvestimento){
+        double valorTotal = valorJuros + valorInvestimento;
+        return valorTotal;
+    }
+
 }

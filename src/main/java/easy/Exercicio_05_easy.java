@@ -1,23 +1,25 @@
 package easy;
 
-import javax.swing.*;
-
 public class Exercicio_05_easy { //Inicio algoritmo
 
-    static int valorInformado1, valorInformado2, valorInformado3, soma, subtracao, multiplicacao, divisaoMedia;
-    public static void main(String[] args) {
-
-        valorInformado1= Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro valor: "));
-        valorInformado2= Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo valor: "));
-        valorInformado3= Integer.parseInt(JOptionPane.showInputDialog("Digite o terceiro valor: "));
-
-        soma = valorInformado1 + (valorInformado2 + valorInformado3);
-        subtracao = valorInformado1 - valorInformado2 - valorInformado3;
-        multiplicacao = (valorInformado1 * valorInformado2) * valorInformado3;
-        divisaoMedia = (soma / 3);
-
-        System.out.println("Valores: " + "\n Soma: " + soma + "\n Subtração: " + subtracao +
-                "\n Multiplicação: " + multiplicacao + "\n Média: " + divisaoMedia);
-
+    public int soma(int primeiroNumero, int segundoNumero, int terceiroNumero) {
+        int soma;
+        soma = (primeiroNumero + (segundoNumero + terceiroNumero));
+        return soma;
+    }
+    public int subtracao(int primeiroNumero, int segundoNumero, int terceiroNumero){
+        int subtracao;
+        subtracao = (primeiroNumero - segundoNumero - terceiroNumero);
+        return subtracao;
+    }
+    public int multiplicacao(int primeiroNumero, int segundoNumero, int terceiroNumero){
+        int multiplicacao;
+        multiplicacao = ((primeiroNumero * segundoNumero) * terceiroNumero);
+        return multiplicacao;
+    }
+    public int media (int soma){
+        int media;
+        media = soma/3;
+        return media;
     }
 } // Fim algoritmo

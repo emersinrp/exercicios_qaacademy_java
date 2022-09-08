@@ -1,24 +1,18 @@
 package easy;
 
-import javax.swing.*;
+public class Exercicio_06_easy { //Inicio algoritmo
 
-public class Exercicio_06_easy { //Inicio Algoritmo
-
-    static double primeiraNota, segundaNota, mediaNotas;
-    public static void main(String[] args) {
-
-        primeiraNota = Double.parseDouble(JOptionPane.showInputDialog("Informe a primeira nota: "));
-        segundaNota = Double.parseDouble(JOptionPane.showInputDialog("Informe a segunda nota: "));
+    public String verificaAprovacao(double primeiraNota, double segundaNota) {
+        double mediaNotas;
         mediaNotas = (primeiraNota + segundaNota) / 2;
 
         if (mediaNotas > 5) { //Inicio SE
-            System.out.println("Aprovado !");
-        } //Fim SE
-        if (mediaNotas < 5) {
-            System.out.print("Reprovado !");
-        }
-        else if (mediaNotas == 5) {
-            System.out.println("Ficou para exame!");
+            return ("Voce esta Aprovado");
+        } // Fim SE
+        else if (mediaNotas < 5) {
+            return("Voce esta Reprovado");
+        }else {
+            return("Ficou para exame");
         }
     }
 } //Fim algoritmo
