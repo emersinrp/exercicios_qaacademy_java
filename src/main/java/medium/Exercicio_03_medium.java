@@ -2,9 +2,9 @@ package medium;
 
 public class Exercicio_03_medium { //Inicio Algoritmo
 
-    static int i = 0 , soma;
-    public static void main(String[] args) {
 
+    public void somarNumerosAcumulados() {
+        int i = 0 , soma = 0;
         while (i<1000){ //Inicio enquanto
             soma = soma+i;
             System.out.println(soma);
