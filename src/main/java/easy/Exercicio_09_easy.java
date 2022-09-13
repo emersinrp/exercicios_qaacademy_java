@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class Exercicio_09_easy {
 
-    public void calculoTaboada(int numeroDigitado) {
+    public void calculaTaboada(int numeroDigitado) {
         int i=1, resultado = 0;
 
         while (i <= 10){

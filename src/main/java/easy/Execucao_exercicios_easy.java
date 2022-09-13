@@ -1,7 +1,6 @@
 package easy;
 
 import javax.swing.*;
-import java.awt.*;
 import java.text.DecimalFormat;
 
 public class Execucao_exercicios_easy {
@@ -63,14 +62,15 @@ public class Execucao_exercicios_easy {
             Exercicio_08_easy ex08_easy = new Exercicio_08_easy();
             double salario = 3000.00;
             double impostoDeRenda = ex08_easy.calculaImpostoDeRenda(salario);
+            double salarioLiquido = ex08_easy.calculaSalarioLiquido(salario, impostoDeRenda);
             System.out.println("O imposto de renda sera: " + ex08_easy.calculaImpostoDeRenda(salario));
-            System.out.println("O salario liquido sera: " + ex08_easy.calculaSalarioLiquido(salario, impostoDeRenda));
+            System.out.println("O salario liquido sera: " + salarioLiquido);
         }
 
         if (selecionaExercicio == 9){
             int numeroDigitado = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero de 1 a 10:"));
             Exercicio_09_easy ex09_easy = new Exercicio_09_easy();
-            ex09_easy.calculoTaboada(numeroDigitado);
+            ex09_easy.calculaTaboada(numeroDigitado);
         }
 
         if (selecionaExercicio == 10){
