@@ -32,5 +32,16 @@ public class Execucao_exercicios_medium {
             Exercicio_03_medium ex03_medium = new Exercicio_03_medium();
             ex03_medium.somarNumerosAcumulados();
         }
+
+        if (selecionaExercicio == 4){
+            Exercicio_04_medium ex04_medium = new Exercicio_04_medium();
+            ex04_medium.multiplicaNumerosAteMil();
+        }
+
+        if (selecionaExercicio == 5){
+            Exercicio_05_medium ex05_medium = new Exercicio_05_medium();
+            int menorNumero = ex05_medium.verificaMenorNumero();
+            System.out.println("O numero " + menorNumero + " é o menor");
+        }
     }
 }
