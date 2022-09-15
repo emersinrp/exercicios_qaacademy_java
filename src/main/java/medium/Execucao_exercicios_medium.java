@@ -43,5 +43,11 @@ public class Execucao_exercicios_medium {
             int menorNumero = ex05_medium.verificaMenorNumero();
             System.out.println("O numero " + menorNumero + " é o menor");
         }
+
+        if (selecionaExercicio == 6){
+            Exercicio_06_medium ex06_medium = new Exercicio_06_medium();
+            int fatorial = Integer.parseInt(JOptionPane.showInputDialog("Digite um valor para descobrir o fatorial: "));
+            System.out.println(ex06_medium.calculaFatorial(fatorial));
+        }
     }
 }
