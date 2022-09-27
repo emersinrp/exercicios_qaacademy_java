@@ -4,24 +4,33 @@ import javax.swing.*;
 
 public class Exercicio_09_medium {
 
-    static int i = 0;
-    public static void main(String[] args) {
+    public void recebeImprimeNomeNumeroAluno() {
 
-        String [] nomeAlunosVetor = new String [5];
-        int [] numeroAlunosVetor = new int [5];
+        String[] nomeAlunosVetor = new String[5];
+        int[] numeroAlunosVetor = new int[5];
+        int i = 0;
 
-        while(i<5){
-            nomeAlunosVetor[i] = JOptionPane.showInputDialog("Digite o nome do aluno: ");
-            System.out.println(nomeAlunosVetor[i]);
-            numeroAlunosVetor[i] = Integer.parseInt(JOptionPane.showInputDialog("Digite o numero do aluno: "));
-            System.out.println(numeroAlunosVetor[i]);
+        while (i < 5) {
+            nomeAlunosVetor[i] = recebeAluno();
+            numeroAlunosVetor[i] = recebeNumeroAluno();
             i++;
         }
-        i = 0;
+        imprimeNomeENumero(nomeAlunosVetor, numeroAlunosVetor);
+    }
 
-        while(i<5){
-            System.out.println("Nome do aluno: "+ nomeAlunosVetor[i] + " - Numero do aluno: " + numeroAlunosVetor[i]);
+    public void imprimeNomeENumero(String[] vetorNomes, int[] vetorNumeros) {
+        int i = 0;
+        while (i < 5) {
+            System.out.println("Nome do aluno: " + vetorNomes[i] + " - Numero do aluno: " + vetorNumeros[i]);
             i++;
         }
+    }
+
+    public int recebeNumeroAluno() {
+        return Integer.parseInt(JOptionPane.showInputDialog("Digite o numero do aluno: "));
+    }
+
+    public String recebeAluno() {
+        return JOptionPane.showInputDialog("Digite o nome do aluno: ");
     }
 }

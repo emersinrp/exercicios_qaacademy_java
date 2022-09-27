@@ -49,5 +49,25 @@ public class Execucao_exercicios_medium {
             int fatorial = Integer.parseInt(JOptionPane.showInputDialog("Digite um valor para descobrir o fatorial: "));
             System.out.println(ex06_medium.calculaFatorial(fatorial));
         }
+
+        if (selecionaExercicio == 8){
+            Exercicio_08_medium ex08_medium = new Exercicio_08_medium();
+            String[] vetorMeses = ex08_medium.criaVetorMeses();
+            ex08_medium.imprimeValorVetor(vetorMeses);
+        }
+
+        if (selecionaExercicio == 9){
+            Exercicio_09_medium ex09_medium = new Exercicio_09_medium();
+            ex09_medium.recebeImprimeNomeNumeroAluno();
+        }
+
+        if (selecionaExercicio == 10){
+            Exercicio_10_1_medium ex10_medium = new Exercicio_10_1_medium();
+            int elementoFibonacci = Integer.parseInt(JOptionPane.showInputDialog("Digite o elemento Fibonacci que voce deseja: "));
+            int [] vetorFibonacci = ex10_medium.calculaTermoFibonacci(elementoFibonacci);
+            ex10_medium.calculaTermoFibonacci(elementoFibonacci);
+            ex10_medium.imprimeVetor(vetorFibonacci);
+        }
+
     }
 }
